@@ -1,0 +1,21 @@
+body{
+    background-image: url(https://gambitnash.co.uk/assets/uploads/2015/03/digital-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button{
+    width:400px;
+    height:100px;
+    font-size:x-large;
+    text-align: center;
+    background-color: turquoise;
+    margin: 20px 700px;
+}
+
+div{
+    font-size:500px;
+    color:darkgreen;
+    margin: 20px 50px;
+    text-align: center;
+}
