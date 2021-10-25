@@ -1,5 +1,5 @@
-let start = document.getElementById('btn');
-let div = document.getElementById('div');
+let start = document.getElementById('start');
+let clockSpace = document.getElementById('main__clock');
 let stop = document.getElementById('stop');
 let clock = null;
 start.addEventListener('click', () => {
@@ -12,7 +12,7 @@ start.addEventListener('click', () => {
     hours = String(hours).padStart(2,"0");
     minutes = String(minutes).padStart(2,"0");
     seconds = String(seconds).padStart(2,"0");
-        div.innerHTML = `${hours}:${minutes}:${seconds}`
+        clockSpace.innerHTML = `${hours}:${minutes}:${seconds}`
         },1000);
     }
 });
