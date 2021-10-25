@@ -1,21 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body{
     background-image: url(https://gambitnash.co.uk/assets/uploads/2015/03/digital-background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-button{
-    width:400px;
-    height:100px;
-    font-size:x-large;
-    text-align: center;
-    background-color: turquoise;
-    margin: 20px 700px;
+.main{
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-div{
+.main__title{
+    text-align: center;
+    color:aqua;
+    font-size:x-large;
+    margin: 30px;
+}
+
+.main__start, .main__stop{
+    width:40%;
+    height:auto;
+}
+
+.main__start{
+    margin-bottom: 10px;
+}
+
+.main__start{
+    margin-top:30px;
+}
+
+button{
+    border-radius: 10px;
+    width: 50%;
+    padding:10px;
+    font-size:x-large;
+    background-color: turquoise;
+    display: block;
+    cursor: pointer;
+    margin:auto;
+}
+
+#main__clock{
+    height:50%;
+    width:100%;
     font-size:300px;
     color:darkgreen;
-    margin: 20px 50px;
     text-align: center;
 }
+
+@media only screen and (max-width:600px){
+    .main__title{
+        font-size: large;
+    }
+
+    .main__start, .main__stop{
+        width:100%;
+    }
+
+    #start,#stop{
+        min-width:100%;
+        min-height:40px;
+    }
+
+    .main{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main__clock{
+        width: 100%;
+        font-size: 80px;
+        margin:0;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:800px){
+
+    .main__start, .main__stop{
+        width:100%;
+    }
+
+    #main__clock{
+        font-size: 150px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1100px){
+    .main__start, .main__stop{
+        width:80%;
+    }
+
+    #main__clock{
+        font-size: 200px;
+    }
+} 
+
